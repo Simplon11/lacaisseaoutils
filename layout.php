@@ -13,6 +13,7 @@
     <title>La caisse à outils</title>
 
     <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="style.css">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 
 
@@ -28,10 +29,18 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-
   <body>
+    <header>
+    </header>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container" ">
+
+      <div class="starter-template">
+        <?= $filter ?>
+      </div>
+
+    </div><!-- /.container -->
+    <nav class="navbar navbar-inverse col-md-4 col-md-offset-1">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -40,7 +49,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">La caisse à outils</a>
+
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
@@ -50,10 +59,10 @@
       </div>
     </nav>
 
-    <div class="container" style="margin-top:50px;">
+    <div class="container" ">
 
       <div class="starter-template">
-        <?= $body ?>
+        <?= $map ?>
       </div>
 
     </div><!-- /.container -->
